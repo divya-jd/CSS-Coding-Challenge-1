@@ -107,5 +107,51 @@ body, html {
     }
 }
 
+.car-gif {
+    position: absolute;
+    width: 120px; /* Increased size */
+    height: auto;
+    bottom: 30px;
+    animation: moveCar 5s linear infinite;
+}
+
+.car1 {
+    left: -100px;
+    animation-delay: 0s;
+}
+
+.car2 {
+    left: -120px;
+    animation-delay: 1s;
+}
+
+.car3 {
+    left: -140px;
+    animation-delay: 2s;
+}
+
+@keyframes moveCar {
+    0% {
+        left: -100px;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+.party-gif {
+    position: absolute;
+    left: 90%;
+    top: 73%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: auto;
+    z-index: 10;
+}
+
+.road-lines-repeat {
+    background: url('roadlines.jpg') repeat;
+    height: 100vh;
+}
 
 
